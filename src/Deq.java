@@ -9,7 +9,7 @@ public class Deq extends Queue{
     }
     //Вернуть индекс предыдущего за данным элемента.
     public int backward(int index) {
-        return --index > 0 ? index : tail;
+        return --index >= 0 ? index : size()-1;
     }
     //Добавить число в начало дека
     public void pushFront(char val) throws Exception{
